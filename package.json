@@ -1,0 +1,23 @@
+{
+  "name": "dmsmongoose",
+  "version": "1.0.0",
+  "description": "mongoose document management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node documentManagerSpec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-uopaluwa/dmsMongoose.git"
+  },
+  "author": "uopaluwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-uopaluwa/dmsMongoose/issues"
+  },
+  "homepage": "https://github.com/andela-uopaluwa/dmsMongoose#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "mongoose": "^4.1.12"
+  }
+}
