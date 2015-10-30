@@ -18,7 +18,7 @@ module.exports = {
       callback(err);
       }else{
       return newUser;
-    }
+      }
     });
 	},
 
@@ -55,7 +55,7 @@ module.exports = {
 	getAllDocuments: function(limit_value){
     return models.Document.find({}).sort({'publishedDate': 1}).limit(limit_value)
     .exec(function(err, data) {
-      if (err) console.error(err);
+      if (err) return console.error(err);
       else return data;
     });
 	},
@@ -69,7 +69,7 @@ module.exports = {
 	},
 
 	getAllDocumentsByDate: function(pub_date, limit_value){
-    return models.Document.find({publishedDate: pub_date }).sort({'publishedDate': 1}).limit(limit_value)
+    return models.Document.find({publishedDate: pub_date }).sort({'createdAt': 1}).limit(limit_value)
     .exec(function(err, data) {
       if (err) return console.error(err);
       else return data;

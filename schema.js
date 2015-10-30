@@ -18,10 +18,10 @@ module.exports = function(mongoose) {
     createdAt: { type: Date, default: Date.now }
   });
 
-    var models = {
-      User : mongoose.model('User', userSchema),
-      Document : mongoose.model('Document', documentSchema),
-      Role : mongoose.model('Role', roleSchema)
-    };
-    return models;
+  var models = {
+    User : mongoose.model('User', userSchema),
+    Document : mongoose.model('Document', documentSchema),
+    Role : mongoose.model('Role', roleSchema)
+  };
+  return models;
 }
