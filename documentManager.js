@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var models = require("./schema")(mongoose);
 var database = require("./index");
-
+//define and export methods for CRUD opearations on DB
 module.exports = {
   clearDbCollections: function(){
     return models.Role.remove({}, function(err, roleStatus){
@@ -75,4 +75,4 @@ module.exports = {
       else return data;
     });
 	}
-}
+};

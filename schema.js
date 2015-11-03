@@ -1,3 +1,4 @@
+//create and export models
 module.exports = function(mongoose) {
   var userSchema = new mongoose.Schema({
   firstname : {type: String, required: true, unique: true},
@@ -24,4 +25,4 @@ module.exports = function(mongoose) {
     Role : mongoose.model('Role', roleSchema)
   };
   return models;
-}
+};

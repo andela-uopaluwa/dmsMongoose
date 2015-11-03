@@ -1,3 +1,4 @@
+//initialise and connect to db
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/myTestDB');
 
